@@ -279,7 +279,7 @@ def predict_disease(data:DiseaseFeatures):
         red_sore_around_nose,
         yellow_crust_ooze
         ]
-
+    feature = np.array(feature).astype(int)
     prediction = classifier.predict(np.array(feature).reshape(1,-1))
     print(prediction)
 
